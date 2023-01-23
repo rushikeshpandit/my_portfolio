@@ -23,10 +23,16 @@ const links = [
         active: 'home'
     },
     {
+        name: 'Skillset',
+        to: '/skillset',
+        active: 'skillset'
+    },
+    {
         name: 'Portfolio',
         to: '/portfolio',
         active: 'portfolio'
-    }
+    },
+    
 ]
 
 export default function Navbar({darkMode, handleClick}) {
