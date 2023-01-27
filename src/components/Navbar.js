@@ -23,6 +23,11 @@ const links = [
         active: 'home'
     },
     {
+        name: 'Work Experience',
+        to: '/experience',
+        active: 'work experience'
+    },
+    {
         name: 'Skillset',
         to: '/skillset',
         active: 'skillset'

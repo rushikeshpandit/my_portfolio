@@ -7,6 +7,7 @@ import Portfolio from "./portfolio/Portfolio";
 import Skillset from "./skillset/Skillset";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
+import Experience from './experience/Experience';
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -41,6 +42,7 @@ export default function BaseLayout() {
                   <Route exact path={'/about'} element={<About/>}/>
                   <Route exact path={'/portfolio'} element={<Portfolio/>}/>
                   <Route exact path={'/skillset'} element={<Skillset/>}/>
+                  <Route exact path={'/experience'} element={<Experience/>}/>
                </Routes>
             </Grid>
             <Grid item>
