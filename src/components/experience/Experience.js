@@ -20,14 +20,14 @@ export default function Experience() {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   contentStyle={{
-                    background: "rgb(33, 150, 243)",
+                    background: "#27242f",
                     color: "#fff",
                   }}
                   contentArrowStyle={{
-                    borderRight: "7px solid  rgb(33, 150, 243)",
+                    borderRight: "7px solid  rgb(39,36,47)",
                   }}
                   date={experience.duration}
-                  iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                  iconStyle={{ background: "rgb(39,36,47)", color: "#fff" }}
                   // icon={<WorkIcon />}
                 >
                   <h3 className="vertical-timeline-element-title">
@@ -49,14 +49,14 @@ export default function Experience() {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
                   contentStyle={{
-                    background: "rgb(33, 150, 243)",
+                    background: "#27242f",
                     color: "#fff",
                   }}
                   contentArrowStyle={{
-                    borderRight: "7px solid  rgb(33, 150, 243)",
+                    borderRight: "7px solid  rgb(39,36,47)",
                   }}
                   date={experience.duration}
-                  iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                  iconStyle={{ background: "rgb(39,36,47)", color: "#fff" }}
                   // icon={<WorkIcon />}
                 >
                   <h3 className="vertical-timeline-element-title">
