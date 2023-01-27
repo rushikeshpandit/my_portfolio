@@ -5,7 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import colors from '../../variables.modules.scss';
+import { Box } from "@mui/material";
 
 export default function Experience() {
   const experiences = info.experience;
@@ -40,11 +40,7 @@ export default function Experience() {
                     {experience.location}
                   </h4>
                   <p>{experience.role}</p>
-                  {experience.achievement && (
-                    <p>
-                      {experience.achievement}
-                    </p>
-                  )}
+                  {experience.achievement && <p>{experience.achievement}</p>}
                 </VerticalTimelineElement>
               );
 
@@ -73,11 +69,7 @@ export default function Experience() {
                     {experience.university}
                   </h4>
                   <p>{experience.role}</p>
-                  {experience.achievement && (
-                    <p>
-                      {experience.achievement}
-                    </p>
-                  )}
+                  {experience.achievement && <p>{experience.achievement}</p>}
                 </VerticalTimelineElement>
               );
           }
@@ -86,5 +78,9 @@ export default function Experience() {
     );
   }
 
-  return <VerticalTimeline>{experienceTimeline()}</VerticalTimeline>;
+  return (
+    <Box mt={"3rem"}>
+      <VerticalTimeline>{experienceTimeline()}</VerticalTimeline>
+    </Box>
+  );
 }
