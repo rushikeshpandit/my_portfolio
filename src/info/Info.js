@@ -1,9 +1,10 @@
 import self from "../img/self.png";
 import bmi_1 from "../img/BMI_Calculator_1.png";
 import bmi_2 from "../img/BMI_Calculator_2.png";
-import mock3 from "../img/mock3.png";
-import mock4 from "../img/mock4.png";
-import mock5 from "../img/mock5.png";
+import expenses_tracker from "../img/expenses_tracker.png";
+import weather_one from "../img/weather_one.png";
+import weather_two from "../img/weather_two.png";
+import weather_three from "../img/weather_three.png";
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -94,23 +95,25 @@ export const info = {
     // This is where your portfolio projects will be detailed
     {
       title: "BMI Calculator",
-      live: "http://rp-portfolio.s3-website.ap-south-1.amazonaws.com/downloads", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: "https://github.com/rushikeshpandit/BMI_calculator", // this should be a link to the **repository** of the project, where the code is hosted.
+      live: "http://rp-portfolio.s3-website.ap-south-1.amazonaws.com/downloads",
+      source: "https://github.com/rushikeshpandit/BMI_calculator",
       images: [bmi_1, bmi_2],
       info: "This simple application allows user to calculate BMI once user inputs his weight and height.\nThis app has been written in Flutter language.",
     },
-    // {
-    //     title: "Project 2",
-    //     live: "https://paytonpierce.dev",
-    //     source: "https://github.com/paytonjewell",
-    //     image: mock2
-    // },
-    // {
-    //     title: "Project 3",
-    //     live: "https://paytonpierce.dev",
-    //     source: "https://github.com/paytonjewell",
-    //     image: mock3
-    // },
+    {
+      title: "Expenses Tracker",
+      live: "http://expensestracker-env-1.eba-mahdn4hh.ap-south-1.elasticbeanstalk.com/swagger-ui/index.html",
+      source: "https://github.com/rushikeshpandit/expense_tracker",
+      images: [expenses_tracker],
+      info: "This is Spring Boot application which is used to track expenses of user.",
+    },
+    {
+      title: "Weather App",
+      live: "http://rp-portfolio.s3-website.ap-south-1.amazonaws.com/downloads",
+      source: "https://github.com/rushikeshpandit/weather_app",
+      images: [weather_one, weather_two, weather_three],
+      info: "This is Flutter application which can fetch the current location and display the weather accordingly.",
+    },
     // {
     //     title: "Project 4",
     //     live: "https://paytonpierce.dev",

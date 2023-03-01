@@ -11,20 +11,28 @@ function PortfolioBlock(props) {
       flexDirection={"column"}
       justifyContent={"center"}
       alignItems={"center"}
+      m={10}
     >
-      <ImageList sx={{ width: 350, height: 400 }} cols={2} rowHeight={200}>
+      <ImageList sx={{
+        width: images.length < 3 ? 400 : 600,
+        height: 450,
+        gap: 20
+      }}
+        cols={images.length < 3 ? images.length : 3}
+        rowHeight={200}
+      >
         {images.map((item) => (
           <ImageListItem key={item.img}>
             <img
-              src={`${item}?w=200&h=200&fit=crop&auto=format`}
-              srcSet={`${item}?w=200&h=200&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item}?w=300&h=100&fit=fill&auto=format`}
+              srcSet={`${item}?w=300&h=100&fit=fill&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
             />
           </ImageListItem>
         ))}
       </ImageList>
-      <h1 style={{ fontSize: "2rem" }}>{title}</h1>
+      <h1 style={{ fontSize: "2rem", marginTop: 20 }} >{title}</h1>
       <Box
         className={"portfolio"}
         display={"flex"}
@@ -45,5 +53,4 @@ function PortfolioBlock(props) {
     </Box>
   );
 }
-
 export default PortfolioBlock;
