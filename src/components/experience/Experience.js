@@ -25,7 +25,7 @@ export default function Experience() {
                     color: globalVars.darkModeGlobal ? "#fff" : "#000",
                   }}
                   contentArrowStyle={{
-                    borderRight: "7px solid  rgb(39,36,47)",
+                    borderRight: globalVars.darkModeGlobal ? "7px solid  #fff" : "7px solid  #000",
                   }}
                   date={experience.duration}
                   iconStyle={{ background: "rgb(39,36,47)", color: "#fff" }}
@@ -56,15 +56,14 @@ export default function Experience() {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
                   contentStyle={{
-                    background: "#27242f",
+                    background: globalVars.darkModeGlobal ? "#27242f" : "#fff" ,
                     color: globalVars.darkModeGlobal ? "#fff" : "#000",
                   }}
                   contentArrowStyle={{
-                    borderRight: "7px solid  rgb(39,36,47)",
+                    borderRight: globalVars.darkModeGlobal ? "7px solid  #fff" : "7px solid  #000",
                   }}
                   date={experience.duration}
                   iconStyle={{ background: "rgb(39,36,47)", color: "#fff" }}
-                // icon={<WorkIcon />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     {experience.degree}{" "}
@@ -75,8 +74,14 @@ export default function Experience() {
                   <h4 className="vertical-timeline-element-subtitle">
                     {experience.university}
                   </h4>
-                  <p>{experience.role}</p>
-                  {experience.achievement && <p>{experience.achievement}</p>}
+                  <br />
+                  {experience.achievement && <ul>
+                    {experience.achievement.map(achieve =>
+                      <li>
+                        {'\u2022'} {achieve}
+                      </li>
+                    )}
+                  </ul>}
                 </VerticalTimelineElement>
               );
           }
