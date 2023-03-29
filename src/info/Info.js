@@ -136,6 +136,10 @@ export const info = {
       role: "Working as individual contributor to 4+ applications written in React Native specific for Banking domain, Learning Flutter and Spring Boot",
       achievement: "",
       isWork: true,
+      responsibilities: ["Effectively coded software changes and alterations based on specific design specifications.",
+        "Implemented and updated application modules under the direction of Senior Software Developers.",
+        "Working on 4+ Banking domain applications written in React Native.",
+        "Mainly focused on refactoring code base and implementation of new functionalities along with integration of  REST API's and redux-toolkit."]
     },
     {
       company: "Include Technology",
@@ -145,6 +149,10 @@ export const info = {
       role: "Worked on 2 apps written in SwiftUI",
       achievement: "",
       isWork: true,
+      responsibilities: ["Served as a friendly, hardworking, and punctual employee.",
+        "Worked well independently and on a team to solve problems.",
+        "Worked on SwiftUI application which was based on audio streaming as well another app which was targeting health care domain.",
+        "Also part of team which was responsible for refactor and publish application for this health care domain application."]
     },
     {
       company: "MJB Technology",
@@ -155,6 +163,11 @@ export const info = {
       achievement:
         "Got an Magnificient Multitasker award for contributing to multiple projects",
       isWork: true,
+      responsibilities: ["Implemented and updated application modules under the direction of Senior Software Developers / CTO.",
+        "Effectively coded software changes and alterations based on specific design specifications.",
+        "Introduced and implemented a different type of innovative software.",
+        "Handled team of 5 peoples which includes 1 Business Analyst, 1 QA and 1 web developer and 1 back end developer.",
+        "Was responsible for mobile app written in React Native. My roles and responsibilities includes handling client interaction, requirement gathering, sprint planning and execution and deployment."]
     },
     {
       company: "Destek Infololutions",
@@ -164,6 +177,11 @@ export const info = {
       role: "Handled team of 8 people for iOS Development, Mentored 2 interns, Learned React native.",
       achievement: "",
       isWork: true,
+      responsibilities: ["Provided optimal assistance to the General Manager and handled a variety of tasks.",
+        "Worked on 4+ apps written in Swift.",
+        "Was responsible to handle client interaction, requirement gathering, sprint planning and execution.",
+        "Was responsible mentoring and grooming 2 interns with computer fundamentals and React Native.",
+        "Was involved in all phases of software development from planning till deployment."]
     },
     {
       company: "Include Technology",
@@ -173,6 +191,11 @@ export const info = {
       role: "Got an experience with Swift language, Worked on 8+ applications such as Messaging applications, Todo list, e-commerce applications.",
       achievement: "",
       isWork: true,
+      responsibilities: ["Served as a friendly, hardworking, and punctual employee.",
+        "Worked well independently and on a team to solve problems.",
+        "Organized and prioritized work to complete assignments in a timely, efficient manner.",
+        "Worked on more than 8+ applications which includes messaging apps, todo list apps, e-commerce apps, social networking apps, all of them was written in Swift.",
+        "Was involved in all phases of software development from planning till deployment."]
     },
     {
       company: "Mindstix Software Pvt. Ltd.",
@@ -182,6 +205,9 @@ export const info = {
       role: "Started career with iOS, Worked on iPad application for an e-commerce application written in Objective C.",
       achievement: "",
       isWork: true,
+      responsibilities: ["Served as a dedicated and supportive Intern in a fast-paced environment.",
+        "Was part of iPad team which was working for one of the e-commerce giant  in US and Canada.",
+        "Was responsible for bug fixes and implementing new features in the application."]
     },
     {
       degree: "Master in Computer Application",

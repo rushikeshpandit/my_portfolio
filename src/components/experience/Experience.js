@@ -6,9 +6,10 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Box } from "@mui/material";
-
+import { useGlobalVariablesContext } from "../GlobalVariablesContextProvider";
 export default function Experience() {
   const experiences = info.experience;
+  const globalVars = useGlobalVariablesContext();
 
   function experienceTimeline() {
     return (
@@ -20,15 +21,14 @@ export default function Experience() {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   contentStyle={{
-                    background: "#27242f",
-                    color: "#fff",
+                    background: globalVars.darkModeGlobal ? "#27242f" : "#fff" ,
+                    color: globalVars.darkModeGlobal ? "#fff" : "#000",
                   }}
                   contentArrowStyle={{
                     borderRight: "7px solid  rgb(39,36,47)",
                   }}
                   date={experience.duration}
                   iconStyle={{ background: "rgb(39,36,47)", color: "#fff" }}
-                  // icon={<WorkIcon />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     {experience.company}{" "}
@@ -39,7 +39,14 @@ export default function Experience() {
                   <h4 className="vertical-timeline-element-subtitle">
                     {experience.location}
                   </h4>
-                  <p>{experience.role}</p>
+                  <br />
+                  {experience.responsibilities && <ul>
+                    {experience.responsibilities.map(responsibility =>
+                      <li>
+                        {'\u2022'} {responsibility}
+                      </li>
+                    )}
+                  </ul>}
                   {experience.achievement && <p>{experience.achievement}</p>}
                 </VerticalTimelineElement>
               );
@@ -50,14 +57,14 @@ export default function Experience() {
                   className="vertical-timeline-element--education"
                   contentStyle={{
                     background: "#27242f",
-                    color: "#fff",
+                    color: globalVars.darkModeGlobal ? "#fff" : "#000",
                   }}
                   contentArrowStyle={{
                     borderRight: "7px solid  rgb(39,36,47)",
                   }}
                   date={experience.duration}
                   iconStyle={{ background: "rgb(39,36,47)", color: "#fff" }}
-                  // icon={<WorkIcon />}
+                // icon={<WorkIcon />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     {experience.degree}{" "}
@@ -80,7 +87,7 @@ export default function Experience() {
 
   return (
     <Box mt={"3rem"}>
-      <VerticalTimeline>{experienceTimeline()}</VerticalTimeline>
+      <VerticalTimeline lineColor={ globalVars.darkModeGlobal ? "#fff" : "#000" }>{experienceTimeline()}</VerticalTimeline>
     </Box>
   );
 }

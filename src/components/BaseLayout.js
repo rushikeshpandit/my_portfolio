@@ -8,15 +8,18 @@ import Skillset from "./skillset/Skillset";
 import { Route, Routes } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 import Experience from "./experience/Experience";
+import {useGlobalVariablesContext} from "./GlobalVariablesContextProvider";
 
 export default function BaseLayout() {
   let [darkMode, setDarkMode] = useState(false);
+  const globalVars = useGlobalVariablesContext();
 
   function handleToggleDarkMode() {
     let oppositeOfCurrentDarkMode = !darkMode;
     console.log(oppositeOfCurrentDarkMode);
     localStorage.setItem("darkMode", `${oppositeOfCurrentDarkMode}`);
     setDarkMode(oppositeOfCurrentDarkMode);
+    globalVars.setDarkModeGlobal(oppositeOfCurrentDarkMode);
   }
 
   useEffect(() => {
