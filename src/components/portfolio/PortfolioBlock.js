@@ -13,7 +13,7 @@ function PortfolioBlock(props) {
       alignItems={"center"}
       m={10}
     >
-      <ImageList sx={{
+      {images && <ImageList sx={{
         width: images.length < 3 ? 400 : 600,
         height: 450,
         gap: 20
@@ -32,6 +32,7 @@ function PortfolioBlock(props) {
           </ImageListItem>
         ))}
       </ImageList>
+      }
       <h1 style={{ fontSize: "2rem", marginTop: 20 }} >{title}</h1>
       <Box
         className={"portfolio"}
@@ -43,9 +44,11 @@ function PortfolioBlock(props) {
         py={"2rem"}
       >
         <div className={Style.displaylinebreak}>{info}</div>
-        <Box p={1} border={"2px solid black"} borderRadius={"25px"}>
-          <IconLink link={live} title={"Download"} icon={"fa fa-safari"} />
-        </Box>
+        {
+          live && <Box p={1} border={"2px solid black"} borderRadius={"25px"}>
+            <IconLink link={live} title={"Download"} icon={"fa fa-safari"} />
+          </Box>
+        }
         <Box p={1} border={"2px solid black"} borderRadius={"25px"}>
           <IconLink link={source} title={"Source Code"} icon={"fa fa-code"} />
         </Box>
