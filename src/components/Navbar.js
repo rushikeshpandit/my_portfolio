@@ -17,6 +17,11 @@ const links = [
     active: "about",
   },
   {
+    name: "Skillset",
+    to: "/skillset",
+    active: "skillset",
+  },
+  {
     name: info.initials,
     type: "initials",
     to: "/",
@@ -26,11 +31,6 @@ const links = [
     name: "Work Experience",
     to: "/experience",
     active: "work experience",
-  },
-  {
-    name: "Skillset",
-    to: "/skillset",
-    active: "skillset",
   },
   {
     name: "Portfolio",
@@ -75,6 +75,9 @@ export default function Navbar({ darkMode, handleClick }) {
             </Link>
           </Box>
         ))}
+        <p>
+          <a href={"http://rushikeshpandit.in/blogs/" } target="_blank" rel="noopener noreferrer">Blogs</a>
+        </p>
         <li>
           <Toggler darkMode={darkMode} handleClick={handleClick} />
         </li>
