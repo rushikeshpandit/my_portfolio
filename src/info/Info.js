@@ -60,7 +60,7 @@ export const info = {
     // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
     // Just change the links so that they lead to your social profiles.
   ],
-  bio: "I am a Computer Application post graduate with strong programming skills. \n\nHas been working in Mobile Application development since last 7+ years. \n\nExtensive experience in building complex UI using Swift, SwiftUI, React Native. \n\nHaving sound knowledge of CirecleCI, Bitrise and Fastlane. \n\nWorked on 10+ iOS apps and 5+ React Native applications which includes multiple domains such as Banking, Social media, Messaging etc. \n\nAlso having sound knowledge of applications end to end life cycle as well as app deployment. \n\nI enjoy to learn new technology. You should hire me!",
+  bio: "I am a Computer Application post graduate with strong programming skills. \n\nHas been working in Mobile Application development since last 8+ years. \n\nExtensive experience in building complex UI using Swift, SwiftUI, React Native and basic knowledge of Android, Flutter, Spring Boot, Elixir and Phoenix framework. \n\nHaving sound knowledge of CirecleCI, Bitrise and Fastlane. \n\nWorked on 10+ iOS apps and 5+ React Native applications which includes multiple domains such as Banking, Social media, Messaging etc. \n\nAlso having sound knowledge of applications end to end life cycle as well as app deployment. \n\nI enjoy to learn new technology. You should consider hiring me!",
   skills: {
     proficientWith: [
       "javascript",
@@ -74,7 +74,7 @@ export const info = {
       "Firebase",
       "Push Notification",
     ],
-    exposedTo: ["nodejs", "Spring Boot", "SwiftUI", "Flutter"],
+    exposedTo: ["nodejs", "Spring Boot", "SwiftUI", "Flutter", "Elixir", "Phoenix Framework"],
   },
   hobbies: [
     {
@@ -82,7 +82,7 @@ export const info = {
       emoji: "📖",
     },
     {
-      label: "learning new things",
+      label: "learning new technologies",
       emoji: "📖",
     },
     {
