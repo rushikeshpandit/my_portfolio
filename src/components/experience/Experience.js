@@ -21,7 +21,7 @@ export default function Experience() {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   contentStyle={{
-                    background: globalVars.darkModeGlobal ? "#27242f" : "#fff" ,
+                    background: globalVars.darkModeGlobal ? "#27242f" : "#fff",
                     color: globalVars.darkModeGlobal ? "#fff" : "#000",
                   }}
                   contentArrowStyle={{
@@ -56,7 +56,7 @@ export default function Experience() {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
                   contentStyle={{
-                    background: globalVars.darkModeGlobal ? "#27242f" : "#fff" ,
+                    background: globalVars.darkModeGlobal ? "#27242f" : "#fff",
                     color: globalVars.darkModeGlobal ? "#fff" : "#000",
                   }}
                   contentArrowStyle={{
@@ -92,7 +92,7 @@ export default function Experience() {
 
   return (
     <Box mt={"3rem"}>
-      <VerticalTimeline lineColor={ globalVars.darkModeGlobal ? "#fff" : "#000" }>{experienceTimeline()}</VerticalTimeline>
+      <VerticalTimeline lineColor={globalVars.darkModeGlobal ? "#fff" : "#000"}>{experienceTimeline()}</VerticalTimeline>
     </Box>
   );
 }

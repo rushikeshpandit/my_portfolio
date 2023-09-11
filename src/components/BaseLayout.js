@@ -8,7 +8,7 @@ import Skillset from "./skillset/Skillset";
 import { Route, Routes } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 import Experience from "./experience/Experience";
-import {useGlobalVariablesContext} from "./GlobalVariablesContextProvider";
+import { useGlobalVariablesContext } from "./GlobalVariablesContextProvider";
 
 export default function BaseLayout() {
   let [darkMode, setDarkMode] = useState(false);

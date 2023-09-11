@@ -6,6 +6,7 @@ import weather_one from "../img/weather_one.png";
 import weather_two from "../img/weather_two.png";
 import weather_three from "../img/weather_three.png";
 import redux_toolkit_demo from "../img/redux_toolkit_demo.png";
+import vs_code_extension from "../img/vs_code_extension.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -117,6 +118,12 @@ export const info = {
       source: "https://github.com/rushikeshpandit/redux_toolkit_demo",
       images: [redux_toolkit_demo],
       info: "Todo list application with redux toolkit implementation.",
+    },
+    {
+      title: "VS Code extension",
+      source: "https://github.com/rushikeshpandit/vs-code-extn-rn-template",
+      images: [vs_code_extension],
+      info: "This extension helps user to generate a boilerplate code for redux-toolkit with saga integration",
     },
   ],
   experience: [

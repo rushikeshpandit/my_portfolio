@@ -76,7 +76,7 @@ export default function Navbar({ darkMode, handleClick }) {
           </Box>
         ))}
         <p>
-          <a href={"http://rushikeshpandit.in/blogs/" } target="_blank" rel="noopener noreferrer">Blogs</a>
+          <a href={"http://rushikeshpandit.in/blogs/"} target="_blank" rel="noopener noreferrer">Blogs</a>
         </p>
         <li>
           <Toggler darkMode={darkMode} handleClick={handleClick} />
