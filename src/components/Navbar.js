@@ -4,6 +4,8 @@ import Toggler from "./home/Toggler";
 import { Link, useLocation } from "react-router-dom";
 import { Box } from "@mui/material";
 import { info } from "../info/Info";
+import { ReactComponent as LogoDark } from "../img/logo-dark.svg"
+import { ReactComponent as LogoLight } from "../img/logo-light.svg"
 
 const links = [
   {
@@ -46,7 +48,7 @@ export default function Navbar({ darkMode, handleClick }) {
       ? "home"
       : location.pathname.slice(1, location.pathname.length)
   );
-
+  const Logo = darkMode ? <LogoLight height={75} /> : <LogoDark height={75} />
   return (
     <Box component={"nav"} width={"100%"}>
       <Box
@@ -71,7 +73,7 @@ export default function Navbar({ darkMode, handleClick }) {
               className={Style.link}
             >
               {!link.type && <p style={{ padding: "0.5rem 0" }}>{link.name}</p>}
-              {link.type && <h1>{link.name}</h1>}
+              {link.type && Logo}
             </Link>
           </Box>
         ))}
