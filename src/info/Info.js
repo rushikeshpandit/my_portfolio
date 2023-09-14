@@ -96,10 +96,16 @@ export const info = {
   portfolio: [
     // This is where your portfolio projects will be detailed
     {
-      title: "BMI Calculator",
-      source: "https://github.com/rushikeshpandit/BMI_calculator",
-      images: [bmi_1, bmi_2],
-      info: "This simple application allows user to calculate BMI once user inputs his weight and height.\nThis app has been written in Flutter language.",
+      title: "Redux tool kit demo",
+      source: "https://github.com/rushikeshpandit/redux_toolkit_demo",
+      images: [redux_toolkit_demo],
+      info: "Todo list application with redux toolkit implementation.",
+    },
+    {
+      title: "VS Code extension",
+      source: "https://github.com/rushikeshpandit/vs-code-extn-rn-template",
+      images: [vs_code_extension],
+      info: "This extension helps user to generate a boilerplate code for redux-toolkit with saga integration",
     },
     {
       title: "Expenses Tracker",
@@ -114,16 +120,10 @@ export const info = {
       info: "This is Flutter application which can fetch the current location and display the weather accordingly.",
     },
     {
-      title: "Redux tool kit demo",
-      source: "https://github.com/rushikeshpandit/redux_toolkit_demo",
-      images: [redux_toolkit_demo],
-      info: "Todo list application with redux toolkit implementation.",
-    },
-    {
-      title: "VS Code extension",
-      source: "https://github.com/rushikeshpandit/vs-code-extn-rn-template",
-      images: [vs_code_extension],
-      info: "This extension helps user to generate a boilerplate code for redux-toolkit with saga integration",
+      title: "BMI Calculator",
+      source: "https://github.com/rushikeshpandit/BMI_calculator",
+      images: [bmi_1, bmi_2],
+      info: "This simple application allows user to calculate BMI once user inputs his weight and height.\nThis app has been written in Flutter language.",
     },
   ],
   experience: [
