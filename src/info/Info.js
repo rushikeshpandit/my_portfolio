@@ -95,17 +95,26 @@ export const info = {
   ],
   portfolio: [
     // This is where your portfolio projects will be detailed
+
+    {
+      title: "VS Code extension",
+      source: "https://github.com/rushikeshpandit/vs-code-extn-rn-template",
+      images: [vs_code_extension],
+      info: "This extension helps user to generate a boilerplate code in plain Javascript for redux-toolkit with saga integration",
+      live: "https://marketplace.visualstudio.com/items?itemName=RushikeshPandit.redux-toolkit-saga-boilerplate"
+    },
+    {
+      title: "VS Code extension",
+      source: "https://github.com/rushikeshpandit/vs-code-extn-rn-ts-template",
+      images: [vs_code_extension],
+      info: "This extension helps user to generate a boilerplate code in Typescript for redux-toolkit with saga integration",
+      live: "https://marketplace.visualstudio.com/items?itemName=RushikeshPandit.redux-toolkit-saga-typescript-boilerplate"
+    },
     {
       title: "Redux tool kit demo",
       source: "https://github.com/rushikeshpandit/redux_toolkit_demo",
       images: [redux_toolkit_demo],
       info: "Todo list application with redux toolkit implementation.",
-    },
-    {
-      title: "VS Code extension",
-      source: "https://github.com/rushikeshpandit/vs-code-extn-rn-template",
-      images: [vs_code_extension],
-      info: "This extension helps user to generate a boilerplate code for redux-toolkit with saga integration",
     },
     {
       title: "Expenses Tracker",
